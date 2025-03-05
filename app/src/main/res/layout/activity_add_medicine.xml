@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".AddMedicine">
+
+    <TextView
+        android:id="@+id/tvMedicineDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Medicine Details"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etMedicineId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etMedicineId"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_bg"
+        android:hint="Medicine Id"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMedicineDetails" />
+
+    <EditText
+        android:id="@+id/etMedicineName"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input_bg"
+        android:hint="Medicine Name"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etMedicineId" />
+
+    <EditText
+        android:id="@+id/etMedicineType"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="Medicine Type"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/etMedicineName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input_bg"
+        android:paddingLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/etMedicineQuantity"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/input_bg"
+        android:hint="Medicine Quantity(Stock)"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/etMedicinePrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etMedicineType" />
+
+    <EditText
+        android:id="@+id/etMedicinePrice"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="Price(per unit)"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/etMedicineQuantity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input_bg"
+        android:paddingLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/etMedicineExpiryDate"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="Expiry Date (YYYY-MM-DD)"
+        android:inputType="date"
+        app:layout_constraintTop_toBottomOf="@id/etMedicinePrice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input_bg"
+        android:paddingLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/etMedicineDescription"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/input_bg"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        android:paddingLeft="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddMedicine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etMedicineExpiryDate" />
+
+    <Button
+        android:id="@+id/btnAddMedicine"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_design"
+        android:text="Add Medicine"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etMedicineDescription" />
+
+    <Button
+        android:id="@+id/btnRetrieveMedicine"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_design"
+        android:text="Retrieve Medicine"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAddMedicine" />
+
+    <Button
+        android:id="@+id/btnUpdateMedicine"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_design"
+        android:text="Update Medicine"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnRetrieveMedicine" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

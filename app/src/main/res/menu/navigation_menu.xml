@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="nav_view">
+
+        <group>
+                <item
+                    android:id="@+id/navHome"
+                    android:title="Home"
+                    android:icon="@drawable/baseline_home_24" />
+                <item
+                    android:id="@+id/navMedicines"
+                    android:title="Medicines"
+                    android:icon="@drawable/baseline_medication_24" />
+                <item
+                    android:id="@+id/navShare"
+                    android:title="Share"
+                    android:icon="@drawable/baseline_share_24" />
+                <item
+                    android:id="@+id/navLogout"
+                    android:title="Logout"
+                    android:icon="@drawable/baseline_logout_24" />
+        </group>
+
+
+</menu>

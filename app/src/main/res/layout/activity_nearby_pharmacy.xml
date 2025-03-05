@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NearbyPharmacy">
+
+
+
+    <!-- Title or Header -->
+
+    <!-- Display User's Current Location -->
+    <TextView
+        android:id="@+id/tv_current_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:text="Your Current Location: Loading..."
+        android:textSize="14sp"
+        android:textColor="#255F25"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:elevation="4dp"
+        android:gravity="center"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/corner_radius"
+        android:backgroundTint="#DFF2FF"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/medicineName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/medicinePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#4CAF50"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/medicineExpiry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerPharmacy"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/spinner_border"
+            android:hint="Select Nearby Pharmacy"
+            android:padding="5dp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Quantity Selector -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btn_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="-"
+                android:textSize="20sp"
+                android:backgroundTint="#D32F2F"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/tv_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="20dp"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/btn_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="20sp"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/add_to_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_design"
+            android:text="Add to Cart"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="25dp"/>
+
+
+    </LinearLayout>
+
+
+    <!-- List of Nearby Blood Banks -->
+    <TextView
+        android:id="@+id/tvNearbyPharmacies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Nearby Pharmacies:"
+        android:textColor="#900101"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/nearbyPharmaciesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:orientation="vertical">
+
+            <!-- Default text that will be replaced dynamically -->
+            <TextView
+                android:id="@+id/placeholderText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Searching for nearby pharmacies..."
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:padding="16dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

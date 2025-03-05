@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
+
+        <!-- User Details -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Details"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="25dp"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:padding="10dp"
+            android:background="@drawable/input_bg"
+            android:hint="Name"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/input_bg"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="Phone"
+            android:inputType="phone"/>
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/input_bg"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/input_bg"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="Address"
+            android:inputType="textPostalAddress"/>
+
+
+        <TextView
+            android:id="@+id/tv_pharmacy_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Pharmacy: "
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+
+        <!-- Medicine list -->
+        <TextView
+            android:id="@+id/tv_medicines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medicines: "
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"/>
+
+
+        <!-- Total Price -->
+        <TextView
+            android:id="@+id/tv_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Price: ₹0.00"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Payment Options -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Method"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"/>
+
+        <RadioGroup
+            android:id="@+id/rg_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_pay_online"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Pay Online"/>
+
+            <RadioButton
+                android:id="@+id/rb_cash_on_delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Cash on Delivery"/>
+        </RadioGroup>
+
+        <!-- Buy Now Button -->
+        <Button
+            android:id="@+id/btn_buy_now"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buy Now"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/btn_design"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btn_download_invoice"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_design"
+            android:text="Download Invoice"
+            android:textStyle="bold"
+            android:textColor="#7632F4"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btn_back"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_design"
+            android:text="Back to dashboard"
+            android:textStyle="bold"
+            android:textColor="#7632F4"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+</ScrollView>

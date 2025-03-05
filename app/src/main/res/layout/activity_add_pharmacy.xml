@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".AddPharmacy">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvPharmacyDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="Pharmacy Details"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/pharmacyId"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/input_bg"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:hint="Pharmacy Id"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/pharmacyName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/input_bg"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:hint="Pharmacy Name"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/pharmacyPhone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/input_bg"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:hint="Phone"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/pharmacyEmail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/input_bg"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/pharmacyAddress"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/input_bg"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:hint="Address"
+            android:inputType="textPostalAddress" />
+
+        <EditText
+            android:id="@+id/pharmacyOpeningTime"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/input_bg"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:hint="Opening Time (e.g., 9:00 AM)"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/pharmacyClosingTime"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/input_bg"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:hint="Closing Time (e.g., 9:00 PM)"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/addPharmacyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Pharmacy"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_design"/>
+
+        <Button
+            android:id="@+id/retrievePharmacyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Retrieve Pharmacy"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_design"/>
+
+        <Button
+            android:id="@+id/updatePharmacyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Pharmacy"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_design"/>
+
+    </LinearLayout>
+</ScrollView>

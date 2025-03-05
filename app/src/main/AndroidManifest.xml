@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Pharm"
+        tools:targetApi="31">
+        <activity
+            android:name=".OrderDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrderDetails"
+            android:exported="false" />
+        <activity
+            android:name=".OrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewCartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NearbyPharmacy"
+            android:exported="false" />
+        <activity
+            android:name=".StorePharmacy"
+            android:exported="false" />
+        <activity
+            android:name=".MapMedicineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MedicineDetails"
+            android:exported="false" />
+        <activity
+            android:name=".PharmacyMedicineMapping"
+            android:exported="false" />
+        <activity
+            android:name=".AddPharmacy"
+            android:exported="false" />
+        <activity
+            android:name=".AddMedicine"
+            android:exported="false" />
+        <activity
+            android:name=".ManagePharmacy"
+            android:exported="false" />
+        <activity
+            android:name=".ManageMedicine"
+            android:exported="false" />
+        <activity
+            android:name=".NearestPharmacies"
+            android:exported="false" />
+        <activity
+            android:name=".AdminDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".AdminLogin"
+            android:exported="false" />
+        <activity
+            android:name=".Medicine"
+            android:exported="false" />
+        <activity
+            android:name=".DatabaseHelper"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".UserRegistration"
+            android:exported="false" />
+        <activity
+            android:name=".UserLogin"
+            android:exported="false" />
+        <activity
+            android:name=".AdminUserProfile"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAsfVWCvTnPlNOUCVB1Xsiq1gSvY_SYLro" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

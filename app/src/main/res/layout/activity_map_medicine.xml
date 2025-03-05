@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvPharmacyMedicineMapping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Map pharmacy and medicine"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Pharmacy Selection -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textColor="#A00202"
+        android:textStyle="bold"
+        android:text="Select Pharmacy" />
+
+    <Spinner
+        android:id="@+id/spinnerPharmacy"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:padding="5dp"
+        android:hint="Select Pharmacy"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Medicine Selection -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#A00202"
+        android:textStyle="bold"
+        android:text="Select Medicine" />
+
+    <Spinner
+        android:id="@+id/spinnerMedicine"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Select Medicine"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Availability -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Is Available?"
+        android:textColor="#A00202"
+        android:textStyle="bold"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxAvailability"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="2dp"
+        android:text="Available"/>
+
+    <EditText
+        android:id="@+id/etQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Enter Quantity"
+        android:paddingLeft="8dp"
+        android:background="@drawable/input_bg"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"/> <!-- Initially hidden -->
+
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/btnMapMedicine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Map Medicine to Pharmacy"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btn_design"
+        android:layout_marginTop="40dp"/>
+</LinearLayout>

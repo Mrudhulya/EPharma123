@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Medicine">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <EditText
+            android:id="@+id/medSearch"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/search_background"
+            android:drawableRight="@drawable/baseline_search_24"
+            android:hint="Search for medicines "
+            android:padding="10dp" />
+
+        <!-- Main Content Area -->
+        <ScrollView
+            android:id="@+id/main_content11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/bottom_navigation"
+            android:layout_below="@+id/medSearch">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+                <!-- Medicines Section -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!-- Medicine Item 1 -->
+                    <LinearLayout
+                        android:id="@+id/vicks"
+                        android:layout_width="175dp"
+                        android:layout_height="220dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/corner_radius"
+                        android:elevation="4dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:contentDescription="Medicine 1"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/vicks_vaporub" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="Vicks Vaporub 50ml"
+                            android:textAllCaps="false"
+                            android:textColor="#221F1F"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="₹ 180"
+                            android:textColor="#4CAF50"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <!-- Medicine Item 2 -->
+
+                    <LinearLayout
+                        android:id="@+id/aspirin"
+                        android:layout_width="175dp"
+                        android:layout_height="220dp"
+                        android:layout_marginEnd="12dp"
+                        android:elevation="4dp"
+                        android:background="@drawable/corner_radius"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:contentDescription="Medicine 2"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/aspirin" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Aspirin 50mg strips of 10 tablets"
+                            android:textColor="#000000"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="₹ 13"
+                            android:textColor="#4CAF50"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp">
+
+                    <!-- Medicine Item 3 -->
+                    <LinearLayout
+                        android:id="@+id/voliniSpray"
+                        android:layout_width="175dp"
+                        android:layout_height="220dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/corner_radius"
+                        android:elevation="4dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:contentDescription="Medicine 3"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/volini_spray" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="Volini Spray 100g"
+                            android:textAllCaps="false"
+                            android:textColor="#221F1F"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="₹ 300"
+                            android:textColor="#4CAF50"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <!-- Medicine Item 4 -->
+
+                    <LinearLayout
+                        android:id="@+id/benadrylSyrup"
+                        android:layout_width="175dp"
+                        android:layout_height="220dp"
+                        android:layout_marginEnd="12dp"
+                        android:background="@drawable/corner_radius"
+                        android:elevation="4dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:contentDescription="Medicine 4"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/benedryl" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="Benadryl Syrup 50ml"
+                            android:textColor="#000000"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="₹ 77"
+                            android:textColor="#4CAF50"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</RelativeLayout>
